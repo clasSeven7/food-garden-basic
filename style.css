@@ -8,6 +8,7 @@
   --color-black: #000;
 
   --box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  --box-shadow-card: 0 0 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -217,7 +218,149 @@ section .main_btn:hover i {
   text-decoration: none;
   color: var(--color-white);
   position: relative;
-  left: 55%;
-  bottom: 3rem;
+  left: 70%;
+  bottom: 7rem;
   cursor: pointer;
+}
+
+/* ============================== Menu ====================================== */
+
+.menu {
+  width: 100%;
+  padding: 7rem 0;
+}
+
+.menu h1 {
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.menu h1 span {
+  color: var(--color-primary);
+  margin-left: 2rem;
+  font-family: mv boli;
+  margin-top: 2.5rem;
+}
+
+.menu h1 span::after {
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--color-primary);
+  display: block;
+  position: relative;
+  bottom: 2rem;
+}
+
+.menu .menu_box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card {
+  width: 32.5rem;
+  height: 48rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow-card);
+}
+
+.menu .menu_box .menu_card .menu_image {
+  width: 30rem;
+  height: 24.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img {
+  transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card {
+  width: 4.5rem;
+  height: 4.5rem;
+  float: right;
+  position: relative;
+  top: -24rem;
+  right: -0.8rem;
+  opacity: 0;
+  border-radius: 7rem;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card {
+  position: relative;
+  top: -24rem;
+  right: 2rem;
+  opacity: 1;
+}
+
+.menu .menu_box .menu_card .small_card i {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 5rem;
+  color: var(--color-black);
+  cursor: pointer;
+  text-shadow: 0 0 0.6rem var(--color-black);
+  transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .small_card i:hover {
+  color: var(--color-primary);
+}
+
+.menu .menu_box .menu_card .menu_info h2 {
+  width: 60%;
+  text-align: center;
+  margin: 1rem auto 1rem auto;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.menu .menu_box .menu_card .menu_info p {
+  text-align: center;
+  margin-top: 0.8rem;
+  line-height: 2rem;
+  padding: 0 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+  color: var(--color-primary);
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 0.8rem 1rem;
+  margin: 0 8rem;
+  transition: 0.3s;
 }
