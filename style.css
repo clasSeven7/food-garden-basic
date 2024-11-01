@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(https://db.onlinewebfonts.com/c/19a8db654e36276ffccbb72c68b0305a?family=MV+Boli);
+
 :root {
   --color-primary: #f3a712;
   --color-white: #fff;
@@ -27,6 +29,7 @@ section {
 
 section nav {
   display: flex;
+  padding: 1rem;
   justify-content: space-around;
   align-items: center;
   position: fixed;
@@ -38,7 +41,7 @@ section nav {
 }
 
 section nav .logo img {
-  width: 10rem;
+  width: 15rem;
   cursor: pointer;
   margin: 0.7rem 0;
 }
@@ -74,4 +77,147 @@ section nav ul li a:hover::after {
 
 section nav ul li a:hover {
   color: var(--color-primary);
+}
+
+section nav .icon i {
+  font-size: 2rem;
+  color: var(--color-black);
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section nav .icon i:hover {
+  color: var(--color-primary);
+}
+
+section .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 13rem;
+}
+
+section .main .men_text {
+  width: 50rem;
+  position: relative;
+  left: 3.5rem;
+}
+
+section .main .men_text h1 {
+  font-size: 6rem;
+  position: relative;
+  top: -9rem;
+  left: 2rem;
+}
+
+section .main .men_text h1 span {
+  margin-left: 1.5rem;
+  color: var(--color-primary);
+  font-family: mv boli;
+  line-height: 2.2rem;
+}
+
+section .main .main_image {
+  position: relative;
+  right: 4rem;
+}
+
+section .main .main_image img {
+  width: 70rem;
+  position: relative;
+  left: 7rem;
+}
+
+section p {
+  width: 60rem;
+  font-size: 1.6rem;
+  text-align: justify;
+  position: relative;
+  left: 5.5rem;
+  bottom: 10rem;
+  line-height: 2.2rem;
+}
+
+section .main_btn {
+  width: 15rem;
+  background-color: var(--color-primary);
+  position: relative;
+  left: 15rem;
+  bottom: 6rem;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+}
+
+section .main_btn a {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+section .main_btn i {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+section .main_btn:hover i {
+  transform: translateX(0.7rem);
+}
+
+/* ================================= about ================================== */
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 7rem 0;
+}
+
+.about .about_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .about_main .image img {
+  width: 80rem;
+  position: relative;
+  top: 6rem;
+}
+
+.about .about_main .about_text h1 {
+  position: relative;
+  font-size: 6rem;
+  bottom: 2rem;
+}
+
+.about .about_main .about_text h1 span {
+  color: var(--color-primary);
+  font-family: mv boli;
+  line-height: 2.2rem;
+}
+
+.about .about_main .about_text h3 {
+  font-size: 3rem;
+  margin: 0 0 5rem 0;
+}
+
+.about .about_main .about_text p {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin-right: 3rem;
+  line-height: 2.2rem;
+}
+
+.about .about_btn {
+  background-color: var(--color-primary);
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--color-white);
+  position: relative;
+  left: 55%;
+  bottom: 3rem;
+  cursor: pointer;
 }
